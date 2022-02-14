@@ -1,0 +1,125 @@
+
+@font-face {
+  font-family: mer-bold;
+  src: url('./assets/fonts/Merriweather-Bold.ttf');
+}
+@font-face {
+  font-family: int;
+  src: url('./assets/fonts/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: int-bold;
+  src: url('./assets/fonts/Inter-Bold.ttf');
+}
+/* ------ мед.скрол------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: rgb(0, 153, 255);
+  box-sizing: border-box;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0px 20px;
+   font-family: int;
+   font-size: 18px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  padding-top: 70px;
+  padding-bottom: 32px;
+}
+
+.btn {
+ padding: 10px;
+ border-radius: 10px;
+}
+
+p {
+  text-align: center;
+}
+
+footer {
+  padding-top: 40px;
+  display: flex;
+  justify-content:center;
+  color: black;
+}
+
+a {
+  color: black;
+}
+
+/* ----------interactivity-------------------------- */
+a:hover {
+  color: #BDAE82;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover  {
+  background: rgb(95, 95, 155);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.btn:active  {
+  background: rgb(191, 80, 235);
+  
+}
+/* --------при нажатиии работает др элемент(должны быть в одном блоке)------------- */
+section:active .shake-img {
+  animation: shake 0.25s;
+  animation-iteration-count: infinite;
+  background-color: rgb(255, 0, 0);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}

@@ -1,0 +1,134 @@
+
+@font-face {
+  font-family: mer-bold;
+  src: url('./assets/fonts/Merriweather-Bold.ttf');
+}
+@font-face {
+  font-family: int;
+  src: url('./assets/fonts/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: int-bold;
+  src: url('./assets/fonts/Inter-Bold.ttf');
+}
+/* ------ мед.скрол------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 0px 20px;
+   font-family: int;
+   font-size: 18px;
+}
+
+/* ------------video--------------------------------- */
+
+.h2-indent {
+  height: 120px;
+  font-size: 28px;
+  font-family: mer-bold;
+  color: #BDAE82;
+  text-align: center;
+  background: url('./assets/svg/section-title-line.svg');
+  background-repeat: no-repeat;
+  background-position: center 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .h2-indent {
+    background: url('./assets/svg/section-title-line.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 60px;
+  }
+}
+
+h2 {
+  background-color: black;
+  padding:  0px 20px;
+}
+
+.video-player {
+  height: 705px;
+  /* background: url('./assets/img/video-player.jpg'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ----заменяяем бэкграунд вверху на видео------------------ */
+video {
+  width: 1440px;  
+  /* width: 100%;   */
+  /* z-index: -1; */
+  /* height: 100%; */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border: 1px solid #BDAE82;
+  box-sizing: border-box;
+}
+
+.play-btn {
+  width: 150px;
+  height: 150px; 
+  background: url(./assets/svg/Play_Unvisited.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;  
+}
+
+/* ------------footer--------------------------- */
+.container-footer {
+  height: 90px;
+  padding: 0px 40px 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* ----------interactivity-------------------------- */
+a:hover {
+  color: #BDAE82;
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.play-btn:hover  {
+  background: url(./assets/svg/Play_hover.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+
+
+
+
+
